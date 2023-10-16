@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+navbar{
+    position: sticky;
+    background-color: white;
+}
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: white;
+    background-color: black;
+    position: sticky;
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+/* Main Section */
+.main{
+    background-color: whitesmoke;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+.main .headerhello{
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+.main .headername{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.main .header6{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    border-bottom: 3px solid rgb(230, 20, 110);
+    width: 50%;
+}
+
+/*About Section*/
+.about{
+    background-color: whitesmoke;
+    background-size: cover;
+    width: 100%;
+    min-height: 115vh;
+}
+.about img{
+    
+    -webkit-box-shadow: 6px 5px 31px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 5px 31px -14px rgba(0,0,0,0.75);
+    box-shadow: 6px 5px 31px -14px rgba(0,0,0,0.75);
+}
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.about .pAbout{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about .pAbout1{
+    font-size: 1.5rem;
+}
+span{
+    font-weight: bold;
+}
+.resume{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+resume.container{
+    width: 100%;
+    padding: 35px 10%;
+    padding-right: calc(10% - 30px);
+}
+resume.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.col header.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 0px 0px 20px 30px;
+}
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid black;
+}
+.col .contents .box
+{
+    position: relative;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: calc(100% + 23px);
+    top: 0;
+    background-color: black;
+    border: 1px solid white;
+}
+.box h4{
+    position: relative;
+    color: black;
+}
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.box p{
+    line-height: 1.2;
+    color: black;
+    font-size: 17px;
+}
+.col .hresume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media(max-width: 768px){
+    resume.row{
+    grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+        margin-top: 30px;
+    }
+}
+.contact{
+    color: whitesmoke;
+}
+.contact-info{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.card{
+    background: rgb(230, 20, 110);
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.card-icon{
+    font-size: 28px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.card:hover .card-icon{
+    background: none;
+    color: black;
+}
